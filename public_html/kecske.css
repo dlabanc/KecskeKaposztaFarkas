@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 h1 {
@@ -29,3 +30,7 @@ footer p {
     margin:0px;
 }
 
+.footerFormaz{
+    text-align: center;
+    font-size:20px;
+}
