@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+h1 {
+    text-align:center;
+}
+
+#csonak {
+    background-color:aqua;
+    text-align:Center;
+}
+
+#csonakkep {
+    width:70%;
+}
+
+p, aside {
+    padding:5px;
+}
+
+header, article, aside, footer {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+footer p {
+    background-color: deepskyblue;
+    padding:0px;
+    padding-bottom: 5px;
+    margin:0px;
+}
+
