@@ -1,11 +1,5 @@
 window.addEventListener("load", init);
 
-function id(nev){
-    return document.getElementById(nev);
-}
-function $(nev){
-    return document.querySelectorAll(nev);
-}
 
 var kepObj1 = {
     kep: "kepek/kecske2.png", 
@@ -25,6 +19,8 @@ var eleresiUt = [];
 var id = 0;
 
 function init(){
+    ID("labjegyzet").innerHTML = "Kelemen Kevin, Nagy Domonkos, Labanc Dániel, Joó Edvárd";
+    ID("labjegyzet").className="footerFormaz";
     for (var i = 0; i < kepObjTomb.length; i++) {
         $(".keptarolo img")[i].addEventListener("click", Hozzaad);  
         
@@ -41,3 +37,14 @@ function feltolt(index){
    eleresiUt.push(kepObjTomb[index].kep);
     console.log(eleresiUt);
 }
+
+
+function $(nev) {
+    return document.querySelectorAll(nev);
+}
+
+function ID(nev) {
+    return document.getElementById(nev);
+}
+
+
