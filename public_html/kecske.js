@@ -29,6 +29,7 @@ function init() {
 
     function Hozzaad() {
         var azon = this.id;
+        
         feltolt(azon);
     }
 
