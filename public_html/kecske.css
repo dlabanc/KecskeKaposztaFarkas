@@ -7,6 +7,10 @@ h1 {
 #csonak {
     background-color:aqua;
     text-align:Center;
+    background-image: url("kepek/csonak.png");
+    height:400px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #csonakkep {
@@ -36,4 +40,8 @@ footer p {
 .kiemel {
     cursor: -webkit-grab; cursor: grab;
     border: solid red 2px;
+}
+
+.nemlatszik {
+    display:none;
 }
