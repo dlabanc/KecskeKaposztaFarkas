@@ -11,11 +11,14 @@ h1 {
     height:400px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
+
 
 #csonakkep {
     width:70%;
 }
+
 
 p, aside {
     padding:5px;
@@ -59,3 +62,33 @@ footer p {
     bottom:-50px;
 }
 
+
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        display: grid;
+
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    #bal{
+        width: auto;
+    }
+    #jobb{
+        width: auto;
+    }
+    #csonak{
+        background-size: contain;
+    }
+    .balpozicio{
+       position: static;
+    }
+    .jobbpozicio {
+       position: static;
+}
+
+
+}

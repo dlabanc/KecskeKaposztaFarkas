@@ -14,7 +14,7 @@ var kepObj3 = {
 };
 
 var KepObjTomb = [kepObj1, kepObj2, kepObj3];
-var balpart = [kepObj1.cim, kepObj2.cim, kepObj3.cim, ];
+var balpart = [kepObj1.cim, kepObj2.cim, kepObj3.cim ];
 var eleresiUt = [];
 var hajo = [];
 var jobbpart = [];
@@ -84,6 +84,7 @@ function init() {
             $("article img")[azon].classList.toggle("nemlatszik");
             $("article img")[azon].classList.add("jobbpozicio");
             $("article img")[azon].classList.remove("balpozicio");
+            
             hajo.push(KepObjTomb[azon].cim);
             var index = balpart.indexOf(KepObjTomb[azon].cim);
             balpart.splice(index, 1);

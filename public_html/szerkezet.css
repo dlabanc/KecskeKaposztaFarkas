@@ -15,10 +15,12 @@ header {
 }
 
 article {
+    
     grid-area: a;
 }
 
 #bal {
+    
     grid-area: b;
 }
 
