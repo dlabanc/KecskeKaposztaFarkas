@@ -125,6 +125,9 @@ function init() {
             $("#jobb img")[azon].classList.toggle("nemlatszik");
             jobbpart.push(KepObjTomb[azon].cim);
             hajohelyzet = false;
+            if (jobbpart.includes(KepObjTomb[1].cim) && jobbpart.includes(KepObjTomb[0].cim) && jobbpart.includes(KepObjTomb[2].cim)) {
+                alert("NYERT!");
+            }
         } else {
             this.classList.toggle("nemlatszik");
             $("#bal img")[azon].classList.toggle("nemlatszik");
@@ -163,10 +166,8 @@ function init() {
         if (tomb.includes(KepObjTomb[1].cim) && tomb.includes(KepObjTomb[0].cim) && !(tomb.includes(KepObjTomb[2].cim)) && boolean) {
             alert("Jaj ne! A kecske megette a káposztát!");
             window.location.reload();
-        }
-        if (tomb.includes(KepObjTomb[1].cim) && tomb.includes(KepObjTomb[0].cim) && tomb.includes(KepObjTomb[2].cim) && !boolean) {
-            alert("NYERT!");
     }
+
     }
 
     function hajoPozicio(boolean) {
