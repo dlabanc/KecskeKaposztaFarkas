@@ -47,3 +47,15 @@ footer p {
     display:none;
 }
 
+.balpozicio {
+    position: relative;
+    left: 180px;
+    bottom:-50px;
+}
+
+.jobbpozicio {
+    position: relative;
+    right: 260px;
+    bottom:-50px;
+}
+

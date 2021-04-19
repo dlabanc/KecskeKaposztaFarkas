@@ -82,6 +82,8 @@ function init() {
             var azon = this.id;
             this.classList.toggle("nemlatszik");
             $("article img")[azon].classList.toggle("nemlatszik");
+            $("article img")[azon].classList.add("jobbpozicio");
+            $("article img")[azon].classList.remove("balpozicio");
             hajo.push(KepObjTomb[azon].cim);
             var index = balpart.indexOf(KepObjTomb[azon].cim);
             balpart.splice(index, 1);
@@ -101,6 +103,8 @@ function init() {
             var azon = this.id - 6;
             this.classList.toggle("nemlatszik");
             $("article img")[azon].classList.toggle("nemlatszik");
+            $("article img")[azon].classList.add("balpozicio");
+            $("article img")[azon].classList.remove("jobbpozicio");
             hajo.push(KepObjTomb[azon].cim);
             var index = jobbpart.indexOf(KepObjTomb[azon].cim);
             jobbpart.splice(index, 1);
@@ -114,7 +118,6 @@ function init() {
     }
 
     function kirak() {
-
 
         var azon = this.id - 3;
         var index = hajo.indexOf(KepObjTomb[azon].cim);
@@ -173,8 +176,10 @@ function init() {
     function hajoPozicio(boolean) {
         if (boolean === true) {
             ID("csonak").style.backgroundPosition = "left";
+            ID("csonak").style.transition = "all 2s";
         } else {
             ID("csonak").style.backgroundPosition = "right";
+            ID("csonak").style.transition = "all 2s";
         }
     }
 //ha balról vesszük fel, vagy tesszük le = true
