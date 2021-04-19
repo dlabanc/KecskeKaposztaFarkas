@@ -157,11 +157,11 @@ function init() {
 
     function proba(tomb = [], boolean) {
         if (tomb.includes(KepObjTomb[0].cim) && tomb.includes(KepObjTomb[2].cim) && !(tomb.includes(KepObjTomb[1].cim)) && boolean) {
-            alert("Van farkas és kecske");
+            alert("Ó, jaj! A farkas megette a kecskét!");
             window.location.reload();
         }
         if (tomb.includes(KepObjTomb[1].cim) && tomb.includes(KepObjTomb[0].cim) && !(tomb.includes(KepObjTomb[2].cim)) && boolean) {
-            alert("Van kecske és káposzta");
+            alert("Jaj ne! A kecske megette a káposztát!");
             window.location.reload();
         }
         if (tomb.includes(KepObjTomb[1].cim) && tomb.includes(KepObjTomb[0].cim) && tomb.includes(KepObjTomb[2].cim) && !boolean) {
